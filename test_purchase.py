@@ -2,6 +2,8 @@ import pytest
 @pytest.fixture()
 def setUp():
     print("setup started")
+    yield
+    print("excited!")
 
 
 def test_AddItemToCart(setUp):
