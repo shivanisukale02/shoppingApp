@@ -1,17 +1,8 @@
-import pytest
-@pytest.fixture()
-def setUp():
-    print("opened amazon app")
-    print("user logged in")
-    yield
-    print("user logged out")
-    print("closed amazon app")
-
-def test_placeOrder(setUp):
+def test_placeOrder():
     print("Placing order")
 
-def test_makePayment(setUp):
+def test_makePayment():
     print("To do the payment")
 
-def test_orderConfirmation(setUp):
+def test_orderConfirmation():
     print("Order Confirmed")
